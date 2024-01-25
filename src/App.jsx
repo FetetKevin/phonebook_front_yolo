@@ -10,7 +10,7 @@ const App = () => {
     const [number, setNumber] = useState("");
     const [filter, setFilter] = useState("");
 
-    const baseUrl = "http://localhost:3001/api";
+    const baseUrl = "/api";
 
     useEffect(() => {
         axios.get(baseUrl + "/persons").then((res) => setPersons(res.data));
